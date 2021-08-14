@@ -10,6 +10,7 @@ function main() {
     var mouseDiv = null
     var focusDiv = null
     var upCount = 0
+    var infoDiv = null
 
     function applyStyle(elm) {
         elm.oldBackground = elm.style.background
@@ -84,6 +85,7 @@ function main() {
     }
 
     function finish() {
+        removeInfo()
         if (focusDiv != null) {
             removeStyle(focusDiv)
             upCount = 0
@@ -92,7 +94,26 @@ function main() {
         document.removeEventListener("keydown", handleKeyDown, false)
     }
 
+    function addInfo() {
+        const div = document.createElement('div')
+        div.innerText = '⬆: expand; ⬇: reduce; ⏎: randomize; ␛: cancel'
+        div.style.position = 'fixed'
+        div.style.background = 'lightgrey'
+        div.style.top = '10%'
+        div.style.left = '30%'
+        div.style.fontSize = 'bigger'
+        div.style.zIndex = 999
+        document.body.appendChild(div)
+        infoDiv = div
+    }
+    function removeInfo() {
+        if (infoDiv != null) {
+            infoDiv.remove()
+            infoDiv = null
+        }
+    }
     function start() {
+        addInfo()
         document.addEventListener("keydown", handleKeyDown, false)
         document.addEventListener("mousemove", handleMouseMove, false)
     }
