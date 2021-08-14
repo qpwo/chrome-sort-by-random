@@ -1,0 +1,30 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+    "name": "Randomize list",
+    "version": "1.0",
+    "icons": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "description": "Randomize the order of items in a given list",
+    "permissions": [
+        "activeTab",
+        "declarativeContent"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "css": [
+                "randomizeDiv.css"
+            ],
+            "js": [
+                "randomizeDiv.js"
+            ]
+        }
+    ],
+    "manifest_version": 3
+}
