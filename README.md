@@ -1,6 +1,6 @@
-# chrome-sort-by-random
+# Sort by random in chrome!
 
-Sort lists on the web by random. Reddit, hackernews, any list thing basically.
+Sort lists on the web by random. Reddit, hackernews, file lists on github, bullet points, paragraphs, any list thing basically. [Download](https://chrome.google.com/webstore/detail/randomize-list/bkmcphdnmpfdcopiefafdbgknighhhin)
 
 ## Usage
 
@@ -8,8 +8,6 @@ Sort lists on the web by random. Reddit, hackernews, any list thing basically.
 + Hit up/down arrows until the parent element seems to be selected.
 + Hit enter to shuffle it.
 
-Pending review on chrome store as of 2021-08-14
-
 ## Demo
 
-https://user-images.githubusercontent.com/10591373/129457067-94c8aec3-0362-4c4c-9fc3-04b86fe12fb1.mov
+https://user-images.githubusercontent.com/10591373/130074452-f3c3cd56-2ac0-429b-b276-690417816ed6.mov
