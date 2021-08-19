@@ -7,6 +7,10 @@ chrome.action.onClicked.addListener((tab) => {
 
 
 function main() {
+    if (window?.sbrExtStarted) {
+        return
+    }
+    window.sbrExtStarted = true
     var mouseDiv = null
     var focusDiv = null
     var upCount = 0
@@ -92,6 +96,7 @@ function main() {
         }
         document.removeEventListener("mousemove", handleMouseMove, false)
         document.removeEventListener("keydown", handleKeyDown, false)
+        window.sbrExtStarted = false
     }
 
     function addInfo() {
