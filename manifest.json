@@ -1,5 +1,5 @@
 {
-    "name": "Randomize list",
+    "name": "Sort by random: shuffle lists",
     "version": "1.4",
     "description": "Randomize the order of items in a given list",
     "manifest_version": 3,
