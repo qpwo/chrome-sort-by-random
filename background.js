@@ -88,6 +88,12 @@ function main() {
         }
     }
 
+    function handleMouseDown(event) {
+        shuffleChildren(focusDiv)
+        finish()
+        event.preventDefault()
+    }
+
     function finish() {
         removeInfo()
         if (focusDiv != null) {
@@ -95,6 +101,7 @@ function main() {
             upCount = 0
         }
         document.removeEventListener("mousemove", handleMouseMove, false)
+        document.removeEventListener("mousedown", handleMouseDown, false)
         document.removeEventListener("keydown", handleKeyDown, false)
         window.sbrExtStarted = false
     }
@@ -121,6 +128,7 @@ function main() {
         addInfo()
         document.addEventListener("keydown", handleKeyDown, false)
         document.addEventListener("mousemove", handleMouseMove, false)
+        document.addEventListener("mousedown", handleMouseDown, false)
     }
 
     start()
