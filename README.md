@@ -5,13 +5,9 @@ Sort lists on the web by random. Reddit, hackernews, file lists on github, bulle
 ## Usage
 
 + Click the icon (or `cmd-shift-0`) then click a div. You should see a red box around it.
-+ Hit up/down arrows until the parent element seems to be selected.
-+ Hit enter to shuffle it.
++ If you can't get the right div with the mouse then it up/down arrows until the parent element seems to be selected.
++ Click or hit enter to randomize/shuffle it.
 
 ## Demo
 
-<!-- https://user-images.githubusercontent.com/10591373/130074452-f3c3cd56-2ac0-429b-b276-690417816ed6.mov -->
-
-https://user-images.githubusercontent.com/10591373/130285538-e842f1cc-9314-4139-9fc7-24eaa1c059c2.mov
-
-
+https://user-images.githubusercontent.com/10591373/131261635-9acfe4dd-2404-425c-91ab-4b319b6034fa.mp4
